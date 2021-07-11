@@ -1,0 +1,26 @@
+{% block content %}
+
+<h2>Event page</h2>
+
+<form action="" method="get" class="form-example">
+
+    <label for="start">Date</label>
+
+    <input type="date" id="start" name="trip-start" min="2016-01-01">
+
+    <label for="start">Heure de début</label>
+    <input type="time" name="start">
+
+    <label for="start">Heure de fin</label>
+    <input type="time" name="end">
+
+    <div class="form-example">
+      <label for="name">Nombre de spectateurs</label>
+      <input type="text" name="name" id="name" required>
+    </div>
+
+    <input type="submit" value="Afficher la prédiction">
+
+  </form>
+
+{% endblock %}

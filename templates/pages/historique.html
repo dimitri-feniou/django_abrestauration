@@ -1,0 +1,119 @@
+{% extends 'base.html' %} {% block content %}
+<!-- Navbar -->
+<!-- Just an image -->
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"> <img src="/docs/4.0/assets/brand/bootstrap-solid.svg"width="30"height="30"alt="Logo AB"/>
+    </a>
+    <a class="navbar-brand" href="#">AB restauration</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Acceuil <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gestion évènements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gestion des Points de ventes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Stocks</a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Historique</a
+          >
+          <!-- Add disconnect button -->
+          <button
+            type="button"
+            class="
+              btn btn-outline-primary
+              position-absolute
+              top-50
+              end-0
+              translate-middle-y
+            "
+          >
+            Déconnexion
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<h1>Historique</h1>
+<p> 2020-2021<p>
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">CA</h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Benefice</h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Total Spectateur</h5>
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-body">
+    <h5 class="card-title">Nombres évènements</h5>
+    </div>
+  </div>
+</div>
+
+<h2>Parcourir les évènements</h2>
+<ul class="list-group">
+  <li class="list-group-item">2021.05.25</li>
+  <li class="list-group-item">2021.05.02</li>
+  <li class="list-group-item">2021.04.27</li>
+</ul>
+{% comment %} <a href="#" class="stretched-link">Voir plus d'évènements</a> {% endcomment %}
+<a href="historique/plus-event">Voir plus d'évènements</a>
+<h2>Dernier évènements</h2>
+<p> Nom évènement<p>
+<p> Date<p>
+<p> Heure<p>
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">CA</h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Benefice</h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Total Spectateur</h5>
+    </div>
+    </div>
+</div>
+<h2>Point de Ventes</h2>
+<select class="form-select" aria-label="Default select example">
+  <option selected>Sélectionner un Point de vente</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<h2>Point de Ventes</h2>
+<select class="form-select" aria-label="Default select example">
+  <option selected>Sélectionner un Produit</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</body>
+{% endblock %}
+

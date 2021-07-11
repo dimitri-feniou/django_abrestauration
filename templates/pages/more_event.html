@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% block content %}
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"> <img src="/docs/4.0/assets/brand/bootstrap-solid.svg"width="30"height="30"alt="Logo AB"/>
+    </a>
+    <a class="navbar-brand" href="#">AB restauration</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Acceuil <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gestion évènements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gestion des Points de ventes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Stocks</a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Historique</a
+          >
+          <!-- Add disconnect button -->
+          <button
+            type="button"
+            class="
+              btn btn-outline-primary
+              position-absolute
+              top-50
+              end-0
+              translate-middle-y
+            "
+          >
+            Déconnexion
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<h1>Historique des évènements </h1>
+<h2>Filtrer les évènements</h2>
+<h3>Type d'évènements</h3>
+    <select class="form-select" aria-label="Default select example">
+    <option selected>choose</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    </select>
+<h3>Date évènements</h3>
+<h3>Années</h3>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>choose</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    </select>
+<h3>Situation Exptionnel</h3>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>choose</option>
+    <option value="1">Oui</option>
+    <option value="2">Non</option>
+    </select>
+<h3>Villes</h3>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>choose</option>
+    <option value="1">Oui</option>
+    <option value="2">Non</option>
+    </select>
+{% endblock %}
